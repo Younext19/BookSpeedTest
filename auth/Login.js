@@ -10,7 +10,10 @@ import {
   TouchableOpacity,
   Image,
 } from 'react-native';
-
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from 'react-native-responsive-screen';
 export default function Login({navigation}) {
   function WhenLogin() {
     console.log('asip');
@@ -20,8 +23,8 @@ export default function Login({navigation}) {
       <View
         style={{
           backgroundColor: '#0d2332',
-          height: 450,
-          width: 450,
+          height: hp('55%'),
+          width: wp('110%'),
           position: 'absolute',
           borderRadius: 450 / 2,
           top: -100,
